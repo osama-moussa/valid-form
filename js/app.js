@@ -1,10 +1,8 @@
 
 const login = document.getElementById('login')
 
-function passvalues (){
-  let uname = document.getElementById('username').value;
-  localStorage.setItem('inputvalue',uname)
-  return false;
+function passvalues(username) {
+  localStorage.setItem('username', username)
 }
 
 function printError(elemId, hintMsg) {
