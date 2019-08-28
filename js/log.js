@@ -1,1 +1,1 @@
-document.getElementById('result').innerHTML=localStorage.getItem('inputvalue');
+let unname = localStorage.getItem('username')
