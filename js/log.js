@@ -1,1 +1,2 @@
-let unname = localStorage.getItem('username')
+let unname =localStorage.getItem('username');
+document.getElementById('result').innerHTML = unname;
