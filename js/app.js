@@ -1,8 +1,10 @@
 
 const login = document.getElementById('login')
 
-function passvalues (username){
-  localStorage.setItem('username',username)
+function passvalues (){
+  let uname = document.getElementById('username').value;
+  localStorage.setItem('inputvalue',uname)
+  return false;
 }
 
 function printError(elemId, hintMsg) {
@@ -26,6 +28,7 @@ else {
  printError("error_password",' password must be more than 6 characters')
 
 } else {
- window.location.href = "main/logged.html"
+  passvalues (username);
+window.location.href = "main/logged.html"
 }
 })
